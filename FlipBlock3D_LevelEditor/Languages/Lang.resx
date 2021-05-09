@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="sAboutProgram" xml:space="preserve">
+    <value>About Program</value>
+  </data>
+  <data name="sCellsCount" xml:space="preserve">
+    <value>Cells Count</value>
+  </data>
+  <data name="sConstanNumberOfSteps" xml:space="preserve">
+    <value>Constant Number of Steps</value>
+  </data>
+  <data name="sCurrentCell" xml:space="preserve">
+    <value>Current Cell</value>
+  </data>
+  <data name="sDeletaAllCells" xml:space="preserve">
+    <value>Deleta all cells</value>
+  </data>
+  <data name="sDeleteThisCell" xml:space="preserve">
+    <value>Delete this cell</value>
+  </data>
+  <data name="sDirectOnAxis" xml:space="preserve">
+    <value>Direct On Axis</value>
+  </data>
+  <data name="sEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="sErrorConfigFileNoExistMessage" xml:space="preserve">
+    <value>Configuration File of program not exist or it is corrupted.
+Program will open with default settings.
+If you open first time this program, pleas ignore this problem.
+If this problem occur every time during opening a program, please start program with Administrator Rights.</value>
+  </data>
+  <data name="sErrorConfigFileNoExistTitle" xml:space="preserve">
+    <value>Problem with Configuration File</value>
+  </data>
+  <data name="sErrorIncorrectNameMessage" xml:space="preserve">
+    <value>Please select a correct level name.</value>
+  </data>
+  <data name="sErrorIncorrectNameTittle" xml:space="preserve">
+    <value>Incorrect level name</value>
+  </data>
+  <data name="sErrorIncorrectPathMessage" xml:space="preserve">
+    <value>Please select a correct level path.</value>
+  </data>
+  <data name="sErrorIncorrectPathTittle" xml:space="preserve">
+    <value>Incorrect level path</value>
+  </data>
+  <data name="sErrorManualOpenMessage" xml:space="preserve">
+    <value>Manual cannot be open properly. Please check you PC can open PDF files.
+
+If PC can open PDF files pleas make following steps:
+1. Check program folder, if contains folder "Manuals".
+2.  Check "Manuals" folder contains PDF file "Flip Block 3D - Level Editor (User Manual).pdf".
+
+If any step is not met, please contact with person who distrbute this program.</value>
+  </data>
+  <data name="sErrorManualOpenTittle" xml:space="preserve">
+    <value>Error during open manual</value>
+  </data>
+  <data name="sErrorOpenLevelMessage" xml:space="preserve">
+    <value>Game level cannot be opened!
+File is corrupted.</value>
+  </data>
+  <data name="sErrorOpenLevelTittle" xml:space="preserve">
+    <value>Open level error</value>
+  </data>
+  <data name="sErrorPathNoExistMessage" xml:space="preserve">
+    <value>The level path does not exist.</value>
+  </data>
+  <data name="sErrorPathNoExistTittle" xml:space="preserve">
+    <value>No exist level path</value>
+  </data>
+  <data name="sErrorSaveLevelMessage" xml:space="preserve">
+    <value>Game level was not saved correct!
+Some unxpected error occure.</value>
+  </data>
+  <data name="sErrorSaveLevelTittle" xml:space="preserve">
+    <value>Error during save level</value>
+  </data>
+  <data name="sExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="sFile" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="sFinish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="sFlipBlock3D_LevelEditor" xml:space="preserve">
+    <value>Flip Block 3D - Level Editor</value>
+  </data>
+  <data name="sGameLevel" xml:space="preserve">
+    <value>Game Level</value>
+  </data>
+  <data name="sHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="sIceCell1" xml:space="preserve">
+    <value>Ice Cell 
+Number of Steps = 1</value>
+  </data>
+  <data name="sIceCell2" xml:space="preserve">
+    <value>Ice Cell
+Number of Steps = 2</value>
+  </data>
+  <data name="sIceCell3" xml:space="preserve">
+    <value>Ice Cell
+Number of Steps = 3</value>
+  </data>
+  <data name="sIceCell4" xml:space="preserve">
+    <value>Ice Cell 
+Number of Steps = 4</value>
+  </data>
+  <data name="sIceCells" xml:space="preserve">
+    <value>Ice cells</value>
+  </data>
+  <data name="sIceDec1" xml:space="preserve">
+    <value>Decrement Number of Steps in Ice Cell</value>
+  </data>
+  <data name="sIceInc1" xml:space="preserve">
+    <value>Increment Number of Steps in Ice Cell</value>
+  </data>
+  <data name="sInfoNewLevelConfirmationMessage" xml:space="preserve">
+    <value>New game level was created!</value>
+  </data>
+  <data name="sInfoNewLevelConfirmationTittle" xml:space="preserve">
+    <value>New level confirmation</value>
+  </data>
+  <data name="sInfoOpenLevelConfirmationMessage" xml:space="preserve">
+    <value>Game level was opened correct!</value>
+  </data>
+  <data name="sInfoOpenLevelConfirmationTittle" xml:space="preserve">
+    <value>Open level confirmation</value>
+  </data>
+  <data name="sInfoSaveLevelMessage" xml:space="preserve">
+    <value>Game level was saved correct!</value>
+  </data>
+  <data name="sInfoSaveLevelTittle" xml:space="preserve">
+    <value>Save level confiramtion</value>
+  </data>
+  <data name="sLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="sLevelDimensionControl" xml:space="preserve">
+    <value>Level dimension control</value>
+  </data>
+  <data name="sLevelDimensionInformation" xml:space="preserve">
+    <value>Level dimension information</value>
+  </data>
+  <data name="sMoveViewBottomLeft" xml:space="preserve">
+    <value>Move All Level To
+Bottom Left Corner</value>
+  </data>
+  <data name="sMoveViewBottomRight" xml:space="preserve">
+    <value>Move All Level To
+Bottom Right Corner</value>
+  </data>
+  <data name="sMoveViewDown" xml:space="preserve">
+    <value>Move All Level To
+Down Direction</value>
+  </data>
+  <data name="sMoveViewLeft" xml:space="preserve">
+    <value>Move All Level To
+Left Direction</value>
+  </data>
+  <data name="sMoveViewRight" xml:space="preserve">
+    <value>Move All Level To
+Right Direction</value>
+  </data>
+  <data name="sMoveViewTopLeft" xml:space="preserve">
+    <value>Move All Level To
+Top Left Corner</value>
+  </data>
+  <data name="sMoveViewTopRight" xml:space="preserve">
+    <value>Move All Level To
+Top Right Corner</value>
+  </data>
+  <data name="sMoveViewUp" xml:space="preserve">
+    <value>Move All Level To
+Up Direction</value>
+  </data>
+  <data name="sNewLevel" xml:space="preserve">
+    <value>New Level</value>
+  </data>
+  <data name="sNormalCell1" xml:space="preserve">
+    <value>Normal Cell 
+Number of Steps = 1</value>
+  </data>
+  <data name="sNormalCell2" xml:space="preserve">
+    <value>Normal Cell
+Number of Steps = 2</value>
+  </data>
+  <data name="sNormalCell3" xml:space="preserve">
+    <value>Normal Cell
+Number of Steps = 3</value>
+  </data>
+  <data name="sNormalCell4" xml:space="preserve">
+    <value>Normal Cell 
+Number of Steps = 4</value>
+  </data>
+  <data name="sNormalCells" xml:space="preserve">
+    <value>Normal Cells</value>
+  </data>
+  <data name="sNormalDec" xml:space="preserve">
+    <value>Decrement Number of Steps in Normal Cell</value>
+  </data>
+  <data name="sNormalInc" xml:space="preserve">
+    <value>Increment Number of Steps in Normal Cell</value>
+  </data>
+  <data name="sNumberOfSteps" xml:space="preserve">
+    <value>Number of steps</value>
+  </data>
+  <data name="sNumberOfStepsModyfier" xml:space="preserve">
+    <value>Number of StepsModyfier</value>
+  </data>
+  <data name="sOpenLevel" xml:space="preserve">
+    <value>Open Level</value>
+  </data>
+  <data name="sOpenManual" xml:space="preserve">
+    <value>Open Manual</value>
+  </data>
+  <data name="sOtherCells" xml:space="preserve">
+    <value>Other Cells</value>
+  </data>
+  <data name="sPositionX" xml:space="preserve">
+    <value>Position X</value>
+  </data>
+  <data name="sPositionY" xml:space="preserve">
+    <value>Position Y</value>
+  </data>
+  <data name="sProjectPath" xml:space="preserve">
+    <value>Level Path</value>
+  </data>
+  <data name="sReleaseDate" xml:space="preserve">
+    <value>Release Date</value>
+  </data>
+  <data name="sResizeViewToAllCells" xml:space="preserve">
+    <value>Resize view to all cells</value>
+  </data>
+  <data name="sSaveLevel" xml:space="preserve">
+    <value>Save Level</value>
+  </data>
+  <data name="sSaveLevelAs3xDot" xml:space="preserve">
+    <value>Save Level as...</value>
+  </data>
+  <data name="sSetDefoultView" xml:space="preserve">
+    <value>Set Defoult View</value>
+  </data>
+  <data name="sShowBottomStatusBar" xml:space="preserve">
+    <value>Show Bottom Status Bar</value>
+  </data>
+  <data name="sShowLeftPanel" xml:space="preserve">
+    <value>Show Left Panel</value>
+  </data>
+  <data name="sShowRightPanel" xml:space="preserve">
+    <value>Show Right Panel</value>
+  </data>
+  <data name="sShowToolBar" xml:space="preserve">
+    <value>Show Tool Bar</value>
+  </data>
+  <data name="sStart" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="sToolBarIconsSize" xml:space="preserve">
+    <value>Tool Bar Icons Size</value>
+  </data>
+  <data name="sType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="sVersionNumber" xml:space="preserve">
+    <value>Version Number</value>
+  </data>
+  <data name="sView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="sViewNavigation" xml:space="preserve">
+    <value>View Navigation</value>
+  </data>
+  <data name="sZoomInLevelView" xml:space="preserve">
+    <value>Zoom In Level View</value>
+  </data>
+  <data name="sZoomOutLevelView" xml:space="preserve">
+    <value>Zoom Out Level View</value>
+  </data>
+</root>
