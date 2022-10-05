@@ -7,7 +7,7 @@
         xmlns:p="clr-namespace:FlipBlock3D_LevelEditor.Languages"
         xmlns:local="clr-namespace:FlipBlock3D_LevelEditor"
         mc:Ignorable="d"
-        Title="{x:Static p:Lang.sFlipBlock3D_LevelEditor}" Height="720" Width="1280" WindowState="Maximized" Icon="Graphics/ProgramIcon_128.png" Closing="Window_Closing">
+        Title="FlipBlock3D_LE" Height="720" Width="1280" WindowState="Maximized" Icon="Graphics/ProgramIcon_128.png" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

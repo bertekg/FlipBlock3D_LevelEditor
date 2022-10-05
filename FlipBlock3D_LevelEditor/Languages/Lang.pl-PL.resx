@@ -123,6 +123,9 @@
   <data name="sCellsCount" xml:space="preserve">
     <value>Ilość komórek</value>
   </data>
+  <data name="sClose" xml:space="preserve">
+    <value>Zamknij</value>
+  </data>
   <data name="sConstanNumberOfSteps" xml:space="preserve">
     <value>Stała liczba kroków</value>
   </data>
@@ -205,8 +208,8 @@ Wystąpił nie przewidziany problem.</value>
   <data name="sFinish" xml:space="preserve">
     <value>Zakończ</value>
   </data>
-  <data name="sFlipBlock3D_LevelEditor" xml:space="preserve">
-    <value>Flip Block 3D - Edytor Poziomów</value>
+  <data name="sFlipBlock3D" xml:space="preserve">
+    <value>Flip Block 3D</value>
   </data>
   <data name="sGameLevel" xml:space="preserve">
     <value>Poziom gry</value>
@@ -265,6 +268,9 @@ Liczba kroków = 4</value>
   </data>
   <data name="sLevelDimensionInformation" xml:space="preserve">
     <value>Informacje o wymiarach poziomu</value>
+  </data>
+  <data name="sLevelEditor" xml:space="preserve">
+    <value>Edytor Poziomów</value>
   </data>
   <data name="sMoveViewBottomLeft" xml:space="preserve">
     <value>Przemieść cały poziom

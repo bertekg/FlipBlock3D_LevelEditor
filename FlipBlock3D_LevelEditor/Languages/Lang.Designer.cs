@@ -79,6 +79,15 @@ namespace FlipBlock3D_LevelEditor.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string sClose {
+            get {
+                return ResourceManager.GetString("sClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Constant Number of Steps.
         /// </summary>
         public static string sConstanNumberOfSteps {
@@ -297,11 +306,11 @@ namespace FlipBlock3D_LevelEditor.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Flip Block 3D - Level Editor.
+        ///   Looks up a localized string similar to Flip Block 3D.
         /// </summary>
-        public static string sFlipBlock3D_LevelEditor {
+        public static string sFlipBlock3D {
             get {
-                return ResourceManager.GetString("sFlipBlock3D_LevelEditor", resourceCulture);
+                return ResourceManager.GetString("sFlipBlock3D", resourceCulture);
             }
         }
         
@@ -468,6 +477,15 @@ namespace FlipBlock3D_LevelEditor.Languages {
         public static string sLevelDimensionInformation {
             get {
                 return ResourceManager.GetString("sLevelDimensionInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Editor.
+        /// </summary>
+        public static string sLevelEditor {
+            get {
+                return ResourceManager.GetString("sLevelEditor", resourceCulture);
             }
         }
         

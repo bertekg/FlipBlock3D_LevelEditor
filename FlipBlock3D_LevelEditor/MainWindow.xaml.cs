@@ -21,22 +21,9 @@ namespace FlipBlock3D_LevelEditor
     /// </summary>
     public partial class MainWindow : Window
     {
-        //string sProgramVersion = "0.40";
-        //string sReleseData = "2018.06.05";
         string projectName = "";
         string projectPath = "";
-        //double dDefoulWidthLeftPanel = 240;
-        //double dDefoulWidthRightPanel = 260;
-        //const string pathConfigFile = "ConfigurationFile.fb3d";
-        //public ProgramConfiguration globalProgConf = new ProgramConfiguration();
-        /*public class ProgramConfiguration
-        {
-            public string SelectedLanguage = "";
-            public bool hideToolBar, hideLeftPanel, hideRightPanel, hideBottomStatusBar;
-            public int iconsSize;
-            public double dLeftPanelSize, dRightPanelSize;
-        }
-        */
+
         public List<Cell> lCells = new List<Cell>();
         public enum CellType { None, Finish, Normal, Ice };
         public class Cell
@@ -59,6 +46,7 @@ namespace FlipBlock3D_LevelEditor
             lvUsers.ItemsSource = lCells;
             UpdateMainGridView();
             SetWindowsVisableElement();
+            this.Title = GetProjectNameInLang();
         }
         bool bAfterInitial = false;
         private void SetLangIndicator()
@@ -652,7 +640,7 @@ namespace FlipBlock3D_LevelEditor
             bAfterInitial = false;
             projectName = "";
             projectPath = "";
-            this.Title = Lang.sFlipBlock3D_LevelEditor;
+            this.Title = GetProjectNameInLang();
             sbiProjectPath.Text = projectPath;
             lCells.Clear();            
             Cell tempCell = new Cell();
@@ -669,6 +657,10 @@ namespace FlipBlock3D_LevelEditor
             UpdateMainGridView();
             bAfterInitial = true;
             Xceed.Wpf.Toolkit.MessageBox.Show(Lang.sInfoOpenLevelConfirmationMessage, Lang.sInfoOpenLevelConfirmationTittle, MessageBoxButton.OK, MessageBoxImage.Asterisk);
+        }
+        private string GetProjectNameInLang()
+        {
+            return Lang.sFlipBlock3D + " - " + Lang.sLevelEditor;
         }
         private void miOpenProject_Click(object sender, RoutedEventArgs e)
         {
@@ -698,7 +690,7 @@ namespace FlipBlock3D_LevelEditor
                     projectName = Path.GetFileNameWithoutExtension(textDialogOpen.FileName);
                     projectPath = Path.GetDirectoryName(textDialogOpen.FileName);
                     tbElementCount.Text = lCells.Count.ToString();
-                    this.Title = Lang.sFlipBlock3D_LevelEditor + " [" + projectName + "]";
+                    this.Title = GetProjectNameInLang() + " [" + projectName + "]";
                     sbiProjectPath.Text = projectPath;
                     bAfterInitial = false;
                     iudAreaViewDimMinX.Value = lCells.Min(c => c.PosX);
@@ -734,7 +726,7 @@ namespace FlipBlock3D_LevelEditor
                 bool bRetAfterSave = SaveProject(lCells, projectName, projectPath);
                 if (bRetAfterSave == true)
                 {
-                    this.Title = Lang.sFlipBlock3D_LevelEditor + " [" + projectName + "]";
+                    this.Title = GetProjectNameInLang() + " [" + projectName + "]";
                     sbiProjectPath.Text = projectPath;
                     Xceed.Wpf.Toolkit.MessageBox.Show(Lang.sInfoSaveLevelMessage, Lang.sInfoSaveLevelTittle, MessageBoxButton.OK, MessageBoxImage.Asterisk);
                 }
@@ -909,17 +901,8 @@ namespace FlipBlock3D_LevelEditor
         }
         public void ShowVersionInformation()
         {
-            string sProgramVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            string sReleseData = "2018.06.07";
-            string insaidInfo = Lang.sFlipBlock3D_LevelEditor + "\n" + Lang.sVersionNumber + ": " + sProgramVersion + "\n" + Lang.sReleaseDate + ": " + sReleseData;
-            Xceed.Wpf.Toolkit.MessageBox.Show(insaidInfo, Lang.sAboutProgram, MessageBoxButton.OK, MessageBoxImage.Information);
-            /*
-            Xceed.Wpf.Toolkit.MessageBox verionInfoMessageBox = new Xceed.Wpf.Toolkit.MessageBox();
-            verionInfoMessageBox.ImageSource = new BitmapImage(new Uri(String.Format("/FlipBlock3D_LevelEditor;component/Graphics/ProgramIcon_128.png"), UriKind.RelativeOrAbsolute));
-            verionInfoMessageBox.Caption = "About Program";
-            verionInfoMessageBox.Text = insaidInfo;
-            verionInfoMessageBox.ShowDialog();
-            */
+            AboutProgram apWindow = new AboutProgram();
+            apWindow.ShowDialog();
         }
         enum SelectedCell { none, normal, normalInc, normalDec, ice, iceInc, iceDec, fin, delete};
         SelectedCell currSelectedCell = SelectedCell.none;
@@ -1127,7 +1110,7 @@ namespace FlipBlock3D_LevelEditor
                 bool bRetAfterSave = SaveProject(lCells, Path.GetFileNameWithoutExtension(textDialogSave.FileName), Path.GetDirectoryName(textDialogSave.FileName));
                 if (bRetAfterSave == true)
                 {
-                    this.Title = Lang.sFlipBlock3D_LevelEditor + " [" + projectName + "]";
+                    this.Title = GetProjectNameInLang() + " [" + projectName + "]";
                     sbiProjectPath.Text = projectPath;
                     Xceed.Wpf.Toolkit.MessageBox.Show(Lang.sInfoSaveLevelMessage, Lang.sInfoSaveLevelTittle, MessageBoxButton.OK, MessageBoxImage.Asterisk);
                 }

@@ -123,6 +123,9 @@
   <data name="sCellsCount" xml:space="preserve">
     <value>Cells Count</value>
   </data>
+  <data name="sClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="sConstanNumberOfSteps" xml:space="preserve">
     <value>Constant Number of Steps</value>
   </data>
@@ -203,8 +206,8 @@ Some unxpected error occure.</value>
   <data name="sFinish" xml:space="preserve">
     <value>Finish</value>
   </data>
-  <data name="sFlipBlock3D_LevelEditor" xml:space="preserve">
-    <value>Flip Block 3D - Level Editor</value>
+  <data name="sFlipBlock3D" xml:space="preserve">
+    <value>Flip Block 3D</value>
   </data>
   <data name="sGameLevel" xml:space="preserve">
     <value>Game Level</value>
@@ -263,6 +266,9 @@ Number of Steps = 4</value>
   </data>
   <data name="sLevelDimensionInformation" xml:space="preserve">
     <value>Level dimension information</value>
+  </data>
+  <data name="sLevelEditor" xml:space="preserve">
+    <value>Level Editor</value>
   </data>
   <data name="sMoveViewBottomLeft" xml:space="preserve">
     <value>Move All Level To
