@@ -1264,7 +1264,7 @@ namespace FlipBlock3D_LevelEditor
         {
             Settings.Default.selectedLanguage = new CultureInfo("en-US");
             Settings.Default.Save();
-            Xceed.Wpf.Toolkit.MessageBox.Show("You select English language.\nPlease close and onece again open program to valid language switch.", "Information", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            Xceed.Wpf.Toolkit.MessageBox.Show("You select English language.\nPlease close and once again open program to valid language switch.", "Information", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             SetLangIndicator();
         }
         private void vPlaceAllCells_MouseWheel(object sender, MouseWheelEventArgs e)
